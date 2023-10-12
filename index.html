@@ -3,46 +3,62 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DIG Bacefook Newsfeed</title>
-    <script src="moment.js"></script>
-    <script src="dataGenerator.js"></script>
-    <script src="app.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <title>Mafiagram</title>
+    <script src="scripts/libs/index.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
-    <div class="hero">
-      <h1 class="hero__text">Mafiagram</h1>
-      <!-- <button id="hero__newpost-btn" type="button">new post</button> -->
-    </div>
-    <main>
-      <div class="left-sidebar">
-        <ul class="left-sidebar__list">
-          <li class="left-sidebar__username"></li>
-          <li class="left-sidebar__item">構成員</li>
-          <li class="left-sidebar__item">犯罪歴</li>
-          <li class="left-sidebar__item">拠点</li>
-          <li class="left-sidebar__item">所属</li>
-        </ul>
-      </div>
-      <div class="postflame">
-        <div id="newpost">
-          <h2>New Post</h2>
-          <div class="newsfeed__post" id="newpostflame">
-            <div class="newsfeed__friend">test</div>
-            <img class="newsfeed__profile-image" src="images/mafia-new-user.jpeg" alt="mafiaの画像です">
-            <form action="#" method="post">
-              <p><textarea class="newsfeed__message" name="comment" placeholder="その気持ちをつぶやこう" id="" cols="30" rows="5"></textarea></p>
-            </form>
-            <input class="newsfeed__post-btn" type="button" value="つぶやく">
+    <div id="global-container">
+      <div class="contents">
+        <div class="hero-container">
+          <div class="hero-container__text">
+            <h1>Mafiagram</h1>
+            <h2>Mafiagramを使うと、構成員やボス、ターゲットたちと繋がりを深められます。</h2>
           </div>
         </div>
-        <div id="newsfeed"></div>
+        <div class="form-container">
+          <div class="log-in">
+            <form action="#" method="post">
+              <div class="log-in__item"><input class="log-in__codename" type="text" name="name" placeholder="コードネーム"></div>
+              <div class="log-in__item"><input class="log-in__pasword" type="password" name="name" placeholder="パスワード"></div>
+              <div class="log-in__item"><div><input class="log-in__checkbox" type="checkbox" name="mafia">Mafiaへ忠誠を誓いますか？</div></div>        
+              <div class="log-in__item"><input class="log-in__btn" type="button" value="ログイン"></div>
+              <div class="log-in__item"><input class="sign-up__btn" type="button" value="新しいアカウントを作成"></div>
+            </form>
+          </div>
+          <div class="sign-up"></div>
+        </div>
       </div>
-      <div class="right-sidebar">
-        <h2>friends</h2>
-        <ul class="right-sidebar__list"></ul>
-      </div>
-    </main>
+      <footer>
+        <div class="footer-container">
+          <div>
+            <ul>
+              <li>日本語</li>
+              <li>English (US)</li>
+              <li>Português (Brasil)</li>
+              <li>中文(简体)</li>
+              <li>Tiếng Việt</li>
+              <li>Español</li>
+              <li>Bahasa Indonesia</li>
+              <li>한국어</li>
+              <li>Français (France)</li>
+              <li>Deutsch</li>
+              <li>Italiano</li>
+              <li>アカウント登録</li>
+              <li>ログイン</li>
+              <li>Messenger</li>
+              <li>Facebook</li>
+              <li>Lite</li>
+              <li>動画</li>
+              <li>スポットゲーム</li>
+              <li>Marketplace</li>
+              <li>Meta</li>
+              <li>PayMetaストア</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
 

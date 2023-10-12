@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mafiagram</title>
+    <script src="scripts/vendors/moment.js"></script>
+    <script src="scripts/libs/dataGenerator.js"></script>
+    <script src="scripts/libs/app.js"></script>
+    <link rel="stylesheet" href="styles/post.css">
+  </head>
+  <body>
+    <div class="hero">
+      <h1 class="hero__text">Mafiagram</h1>      
+    </div>
+    <main>
+      <div class="left-sidebar">
+        <h2>カテゴリー</h2>
+        <ul class="left-sidebar__list">
+          <li class="left-sidebar__item">
+              <img class="left-sidebar__icon" src="images/profile/mafia-new-user.jpeg" alt="mafiaの画像です">
+              <label class="left-sidebar__username"></label>
+          </li>
+          <li class="left-sidebar__item">
+              <img class="left-sidebar__icon" src="images/icon/活動拠点.jpg" alt="mafiaの画像です">
+              <label>活動拠点</label>
+          </li>
+          <li class="left-sidebar__item">
+              <img class="left-sidebar__icon" src="images/icon/所属組織.jpg" alt="mafiaの画像です">
+              <label>所属組織</label>
+          </li>
+          <li class="left-sidebar__item">
+              <img class="left-sidebar__icon" src="images/icon/犯罪歴.jpg" alt="mafiaの画像です">
+              <label>略歴</label>
+          </li>
+          <li class="left-sidebar__item">
+              <img class="left-sidebar__icon" src="images/icon/活動拠点.jpg" alt="mafiaの画像です">
+              <label>作戦</label>
+          </li>
+          <li class="left-sidebar__item">
+              <img class="left-sidebar__icon" src="images/icon/活動拠点.jpg" alt="mafiaの画像です">
+              <label>階級</label>
+          </li>
+          <li class="left-sidebar__item">
+              <img class="left-sidebar__icon" src="images/icon/活動拠点.jpg" alt="mafiaの画像です">
+              <label>血の掟</label>
+          </li>
+          <li class="left-sidebar__item">
+              <img class="left-sidebar__icon" src="images/icon/活動拠点.jpg" alt="mafiaの画像です">
+              <label>次のターゲット</label>
+          </li>
+        </ul>
+      </div>
+      <div class="postflame">
+        <div id="newpost">
+          <h2>New Post</h2>
+          <div class="newsfeed__post" id="newpostflame">
+            <div class="newsfeed__friend"></div>
+            <img class="newsfeed__profile-image" src="images/profile/mafia-new-user.jpeg" alt="mafiaの画像です">
+            <form action="#" method="post">
+              <textarea class="newsfeed__message" name="comment" placeholder="その気持ちをつぶやこう" cols="30" rows="5" maxlength="150"></textarea>
+              <input class="newsfeed__post-btn" type="button" value="つぶやく">
+            </form>
+          </div>
+        </div>
+        <div id="newsfeed"></div>
+      </div>
+      <div class="right-sidebar">
+        <h2>ファミリー</h2>
+        <ul class="right-sidebar__list"></ul>
+      </div>
+    </main>
+  </body>
+</html>
+
