@@ -103,74 +103,73 @@ window.addEventListener("load", () => {
   const newpostBtn = document.querySelector(".newsfeed__post-btn");
 
   newpostBtn.addEventListener("click", function() {
-    const containerEl = document.querySelector("#newsfeed");
-
-    // 投稿のフレームを作成
-    const postEl = document.createElement("div");
-    postEl.classList.add("newsfeed__post");
-
-    // テキストエリアのvalueを取得
-    const textEl = document.querySelector(".newsfeed__message");
-    const post = textEl.value;
-
-    // 投稿者名を追加
-    const friendEl = document.createElement("div");
-    friendEl.classList.add("newsfeed__friend");
-    friendEl.innerText = localStorage.username;
-    postEl.append(friendEl);
-
-    // タイムスタンプ（投稿日時）を追加
-    const timestampEl = document.createElement("div");
-    timestampEl.classList.add("newsfeed__posted-date");
-    let createTime = "posted a few seconds ago";
-    timestampEl.innerHTML = createTime;
-    postEl.append(timestampEl);
-
-    // // 気持ちを追加
-    // const feelingEl = document.createElement("div");
-    // feelingEl.classList.add("newsfeed__feeling");
-    // feelingEl.innerHTML = bacefook.newsfeed[lastIndex]["feeling"];
-    // postEl.append(feelingEl);
     
-    // プロフィール画像を追加
-    const imageEl = document.createElement("img");
-    imageEl.classList.add("newsfeed__profile-image");
-    imageEl.src = "images/profile/mafia-new-user.jpeg";
-    imageEl.alt = "mafiaの画像です";
-    postEl.append(imageEl);
+    // テキストエリアのvalueを取得
+    const newpostTextEl = document.querySelector(".newsfeed__message");
+    const newpostTextValue = newpostTextEl.value;
 
-    // 投稿メッセージを追加
-    const postmessageEl = document.createElement("div");
-    postmessageEl.classList.add("newsfeed__message");
-    postmessageEl.innerText = post;
-    textEl.value = ""; // フォームをリセット
-    postEl.append(postmessageEl);
+    if(!newpostTextValue) {
+      window.alert("メッセージを入力してください。");
+    } else {
+      const containerEl = document.querySelector("#newsfeed");
 
-    // サムアップを追加
-    const thumbsupEl = document.createElement("img");
-    thumbsupEl.classList.add("newsfeed__thumbsup");
-    thumbsupEl.src = "images/icon/thumbsup.jpg";
-    thumbsupEl.alt = "サムズアップの画像です";
-    postEl.append(thumbsupEl);
-
-    // サムダウンを追加
-    const thumbsdownEl = document.createElement("img");
-    thumbsdownEl.classList.add("newsfeed__thumbsdown");
-    thumbsdownEl.src = "images/icon/thumbsdown.jpg";
-    thumbsdownEl.alt = "サムズダウンの画像です";
-    postEl.append(thumbsdownEl);
-
-    // サムズアップとサムズダウンの動作
-    thumbsupEl.addEventListener("click", function() {
-      this.classList.toggle("pressed");
-    });
-
-    thumbsdownEl.addEventListener("click", function() {
-      this.classList.toggle("pressed");
-    });
-
-    // 投稿
-    containerEl.prepend(postEl);
+      // 投稿のフレームを作成
+      const postEl = document.createElement("div");
+      postEl.classList.add("newsfeed__post");
+  
+      // 投稿者名を追加
+      const friendEl = document.createElement("div");
+      friendEl.classList.add("newsfeed__friend");
+      friendEl.innerText = localStorage.username;
+      postEl.append(friendEl);
+  
+      // タイムスタンプ（投稿日時）を追加
+      const timestampEl = document.createElement("div");
+      timestampEl.classList.add("newsfeed__posted-date");
+      let createTime = "posted a few seconds ago";
+      timestampEl.innerHTML = createTime;
+      postEl.append(timestampEl);
+      
+      // プロフィール画像を追加
+      const imageEl = document.createElement("img");
+      imageEl.classList.add("newsfeed__profile-image");
+      imageEl.src = "images/profile/mafia-new-user.jpeg";
+      imageEl.alt = "mafiaの画像です";
+      postEl.append(imageEl);
+  
+      // 投稿メッセージを追加
+      const postmessageEl = document.createElement("div");
+      postmessageEl.classList.add("newsfeed__message");
+      postmessageEl.innerText = newpostTextValue;
+      newpostTextEl.value = ""; // フォームをリセット
+      postEl.append(postmessageEl);
+  
+      // サムアップを追加
+      const thumbsupEl = document.createElement("img");
+      thumbsupEl.classList.add("newsfeed__thumbsup");
+      thumbsupEl.src = "images/icon/thumbsup.jpg";
+      thumbsupEl.alt = "サムズアップの画像です";
+      postEl.append(thumbsupEl);
+  
+      // サムダウンを追加
+      const thumbsdownEl = document.createElement("img");
+      thumbsdownEl.classList.add("newsfeed__thumbsdown");
+      thumbsdownEl.src = "images/icon/thumbsdown.jpg";
+      thumbsdownEl.alt = "サムズダウンの画像です";
+      postEl.append(thumbsdownEl);
+  
+      // サムズアップとサムズダウンの動作
+      thumbsupEl.addEventListener("click", function() {
+        this.classList.toggle("pressed");
+      });
+  
+      thumbsdownEl.addEventListener("click", function() {
+        this.classList.toggle("pressed");
+      });
+  
+      // 投稿
+      containerEl.prepend(postEl);
+    }
   });
 
 });

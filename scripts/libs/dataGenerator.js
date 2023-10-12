@@ -180,7 +180,7 @@
 
   const scheduler = () => {
     createPost(null);
-    setTimeout(scheduler, (3 + Math.random() * 5) * 1000); // generate a new post every 3 to 8 seconds    
+    setTimeout(scheduler, (6 + Math.random() * 3) * 1000); // generate a new post every 6 to 9 seconds    
   };
 
   scheduler();

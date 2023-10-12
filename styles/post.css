@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background: rgba(133, 133, 128, 0.1);
 }
 
 .hero-container {
@@ -38,7 +39,7 @@ body {
 main {
     display: flex;
     justify-content: space-between;
-    background: rgba(133, 133, 128, 0.1);
+    /* background: rgba(133, 133, 128, 0.1); */
     padding-top: 80px;
     font-size: 16px;
     color: #363434;
@@ -48,12 +49,13 @@ ul {
     list-style: none;
     line-height: 30px;
     padding: 0;
+    margin: 0;
 }
 
 #newpost {
     position: relative;
     height: 200px;
-    margin: 0;
+    margin: 0 0 30px 0;
 }
 
 #newpostflame {    
@@ -61,7 +63,14 @@ ul {
 }
 
 #newsfeed {
-    padding-top: 30px;
+    height: 800px;
+    position: relative;
+    overflow: scroll;
+    padding: 10px;
+}
+
+#newsfeed::-webkit-scrollbar {
+    display: none;
 }
 
 form {
@@ -77,8 +86,8 @@ form {
     height: 200px;
     width: 500px;
     margin-bottom: 10px;
-    box-shadow: 0 1px 5px 2px rgba(0,0,0,.1);
     border-radius: 8px;
+    box-shadow: 0 1px 5px 2px rgba(0,0,0,.1);
 }
 
 .newsfeed__profile-image {
@@ -151,14 +160,13 @@ form {
 
 .newsfeed__message {
     position: absolute;
-    top: 70px;
+    top: 80px;
     left: 20px;
     width: 90%;
-    height: 70px;
+    height: 60px;
     border: none;
     resize: none;
 }
-
 
 .left-sidebar {
     width: 100%;
@@ -198,7 +206,7 @@ form {
 }
 
 .right-sidebar__title {
-    font-size: 17px;
+    font-size: 16px;
     color: #646262;
     margin: 0;
 }
@@ -232,4 +240,25 @@ label {
     display: inline-block;
     width: 150px;
     margin-left: 10px;
+}
+
+.footer__container {
+    margin-top: 40px;
+    height: 50px;
+    width: 100%;
+    background: rgba(255,255,255,.8);
+}
+
+.footer__box {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.footer__text {
+    color: #8b8787;
+    font-size: 12px;
+    padding: 0 10px;
 }
