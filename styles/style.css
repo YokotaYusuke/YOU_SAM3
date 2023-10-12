@@ -3,31 +3,43 @@ body {
     background: rgba(133, 133, 128, 0.1);
 }
 
-#global-container {
+#global__container {
     height: 100vh;
 }
 
-.contents {    
+.main__container {    
     display: flex;
     justify-content: space-between;
     height: 90%;
 }
 
-.hero-container {
+.hero__container {
     width: 100%;
     display: flex;
     align-items: center;
 }
 
-.hero-container__text {
+.hero__box {
     padding-left: 250px;
 }
 
-.form-container {
+.hero__title {
+    font-size: 50px;
+    margin: 5px 0;
+    color: #2470f2;
+}
+
+.hero__sub-title {
+    font-weight: 500;
+    margin: 5px 0;
+    font-size: 25px;
+}
+
+.log-in__container {
     width: 100%;
 }
 
-.log-in {
+.log-in__flame {
     width: 100%;
     height: 100%;
     display: flex;
@@ -57,35 +69,6 @@ body {
     text-align: left;
     font-size: 15px;
     width: 100%;
-}
-
-footer {
-    width: 100%;
-    height: 10%;
-    background: rgba(255,255,255,.8);
-}
-
-ul {
-    padding-top: 20px;
-    list-style: none;
-}
-
-li {
-    float: left;
-    color: #8b8787;
-    margin: 10px;
-}
-
-h1 {
-    font-size: 50px;
-    margin: 5px 0;
-    color: #2470f2;
-}
-
-h2 {
-    font-weight: 500;
-    margin: 5px 0;
-    font-size: 25px;
 }
 
 .log-in__item > input {
@@ -119,4 +102,21 @@ h2 {
     border-radius: 5px;
     border: none;
     cursor: pointer;
+}
+
+.footer__container {
+    width: 100%;
+    height: 10%;
+    background: rgba(255,255,255,.8);
+}
+
+.footer__list {
+    padding-top: 20px;
+    list-style: none;
+}
+
+.footer__item {
+    float: left;
+    color: #8b8787;
+    margin: 10px;
 }
