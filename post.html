@@ -10,15 +10,19 @@
     <link rel="stylesheet" href="styles/post.css">
   </head>
   <body>
-    <div class="hero">
-      <h1 class="hero__text">Mafiagram</h1>      
-    </div>
+        <header class="hero-container">
+            <div class="hero-container__item">
+                <img class="hero-container__icon" src="images/icon/構成員.jpg" alt="Mafiagramのロゴです">
+            </div>
+            <h1 class="hero-container__text">Mafiagram</h1>      
+        </header>
     <main>
       <div class="left-sidebar">
         <h2>カテゴリー</h2>
         <ul class="left-sidebar__list">
           <li class="left-sidebar__item">
               <img class="left-sidebar__icon" src="images/profile/mafia-new-user.jpeg" alt="mafiaの画像です">
+              <span class="active-state"></span>
               <label class="left-sidebar__username"></label>
           </li>
           <li class="left-sidebar__item">
@@ -34,26 +38,26 @@
               <label>略歴</label>
           </li>
           <li class="left-sidebar__item">
-              <img class="left-sidebar__icon" src="images/icon/活動拠点.jpg" alt="mafiaの画像です">
+              <img class="left-sidebar__icon" src="images/icon/作戦.jpg" alt="mafiaの画像です">
               <label>作戦</label>
           </li>
           <li class="left-sidebar__item">
-              <img class="left-sidebar__icon" src="images/icon/活動拠点.jpg" alt="mafiaの画像です">
+              <img class="left-sidebar__icon" src="images/icon/階級.jpg" alt="mafiaの画像です">
               <label>階級</label>
           </li>
           <li class="left-sidebar__item">
-              <img class="left-sidebar__icon" src="images/icon/活動拠点.jpg" alt="mafiaの画像です">
+              <img class="left-sidebar__icon" src="images/icon/血の掟.jpg" alt="mafiaの画像です">
               <label>血の掟</label>
           </li>
           <li class="left-sidebar__item">
-              <img class="left-sidebar__icon" src="images/icon/活動拠点.jpg" alt="mafiaの画像です">
+              <img class="left-sidebar__icon" src="images/icon/ターゲット.jpg" alt="mafiaの画像です">
               <label>次のターゲット</label>
           </li>
         </ul>
       </div>
       <div class="postflame">
         <div id="newpost">
-          <h2>New Post</h2>
+          <h2>新規投稿</h2>
           <div class="newsfeed__post" id="newpostflame">
             <div class="newsfeed__friend"></div>
             <img class="newsfeed__profile-image" src="images/profile/mafia-new-user.jpeg" alt="mafiaの画像です">
@@ -66,7 +70,7 @@
         <div id="newsfeed"></div>
       </div>
       <div class="right-sidebar">
-        <h2>ファミリー</h2>
+        <h2>構成員/階級</h2>
         <ul class="right-sidebar__list"></ul>
       </div>
     </main>

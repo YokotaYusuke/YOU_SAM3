@@ -2,7 +2,7 @@ body {
     margin: 0;
 }
 
-.hero {
+.hero-container {
     background: rgba(255,255,255,1);
     position: fixed;
     width: 100%;
@@ -12,25 +12,32 @@ body {
     right: 0;
     z-index: 100;
     overflow: hidden;
+    display: flex;
+    height: 50px;
 }
 
-.hero__text {
-    margin: 10px;
+.hero-container__item {
+    padding: 10px;
+}
+
+.hero-container__icon {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.hero-container__text {
+    margin: 10px 10px 10px 0;
     font-weight: 300;
     font-size: 1.5em;
     float: left;
 }
 
-.hero__newpost-btn {
-    float: right;
-}
-
-
 main {
     display: flex;
     justify-content: space-between;
     background: rgba(133, 133, 128, 0.1);
-    padding-top: 90px;
+    padding-top: 60px;
     font-size: 12px;
 }
 
@@ -90,6 +97,7 @@ form {
     position: absolute;
     bottom: 10px;
     left: 10px;
+    filter: grayscale(90%);
 }
 
 .newsfeed__thumbsdown {
@@ -99,6 +107,11 @@ form {
     position: absolute;
     bottom: 10px;
     left: 50px;
+    filter: grayscale(90%);
+}
+
+.pressed {
+    filter: none;
 }
 
 .newsfeed__post-btn {
@@ -156,12 +169,29 @@ form {
 .left-sidebar__item {
     display: flex;
     align-items: center;
+    border-radius: 5px;
+    padding-left: 5px;
+    position: relative;
+}
+
+.left-sidebar__item:hover {
+    background-color: #d2d0d0;
 }
 
 .left-sidebar__icon {
     height: 20px;
     width: 20px;
     border-radius: 50%;
+}
+
+.active-state {
+    width: 8px;
+    height: 8px;
+    background-color: #08b53f;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 3px;
+    left: 18px;
 }
 
 label {

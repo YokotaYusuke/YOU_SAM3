@@ -8,7 +8,17 @@
   window.bacefook = {};
   bacefook.newsfeed = [];
   bacefook.friends = {};
-  bacefook.friendNames = ["tamaroh", "kani", "eriko", "tsubasa", "masataka"];
+  bacefook.friendNames = [
+    "ABIRUMAN/Boss",
+    "SAM/Consiglire", 
+    "TanaChu/Underboss",
+    "Yusuke/Underboss",
+    "Taka/Capo",
+    "Jin/Soldier",
+    "Yan/Soldier",
+    "Ryo/Associate",
+    "Tora/Facilitator"
+  ];
   bacefook.friendNames.forEach(name => {
     bacefook.friends[name] = [];
   });

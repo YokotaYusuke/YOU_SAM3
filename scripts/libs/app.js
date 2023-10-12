@@ -130,6 +130,17 @@ window.addEventListener("load", () => {
 
   });
 
+  // サムズアップとサムズダウンの動作
+  const thumbsupEl = document.querySelector(".newsfeed__thumbsup");
+  thumbsupEl.addEventListener("click", function() {
+    this.classList.toggle("pressed");
+  });
+
+  const thumbsdownEl = document.querySelector(".newsfeed__thumbsdown");
+  thumbsdownEl.addEventListener("click", function() {
+    this.classList.toggle("pressed");
+  });
+
 });
 
 // ロード完了後にnewsfeedを監視
@@ -212,5 +223,14 @@ watchArray(bacefook.newsfeed, function() {
   // 投稿
   containerEl.prepend(postEl);
 
+  // サムズアップとサムズダウンの動作
+  thumbsupEl.addEventListener("click", function() {
+    this.classList.toggle("pressed");
+  });
+
+  thumbsdownEl.addEventListener("click", function() {
+    this.classList.toggle("pressed");
+  });
 });
+
 }

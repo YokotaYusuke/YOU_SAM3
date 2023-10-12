@@ -40,12 +40,15 @@ form {
     border-radius: 10px;
     box-shadow: 0 1px 1px rgba(0,0,0,.5);
     height: 70%;
-    max-height: 300px;
+    max-height: 400px;
     min-height: 270px;
     width: 80%;
     background: #ffffff;
     text-align: center;
     padding-top: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
 }
 
 footer {
