@@ -19,6 +19,17 @@
     "Ryo/Associate",
     "Tora/Facilitator"
   ];
+  bacefook.friendimages = [
+    "images/profile/ABIRU Boss.jpg",
+    "images/profile/ABIRU Boss.jpg",
+    "images/profile/ABIRU Boss.jpg",
+    "images/profile/ABIRU Boss.jpg",
+    "images/profile/ABIRU Boss.jpg",
+    "images/profile/ABIRU Boss.jpg",
+    "images/profile/ABIRU Boss.jpg",
+    "images/profile/ABIRU Boss.jpg",
+    "images/profile/ABIRU Boss.jpg",
+  ];
   bacefook.friendNames.forEach(name => {
     bacefook.friends[name] = [];
   });

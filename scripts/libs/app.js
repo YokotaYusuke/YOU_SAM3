@@ -57,6 +57,14 @@ window.addEventListener("load", () => {
     thumbsdownEl.alt = "サムズダウンの画像です";
     postEl.append(thumbsdownEl);
 
+    thumbsupEl.addEventListener("click", function() {
+      this.classList.toggle("pressed");
+    });
+
+    thumbsdownEl.addEventListener("click", function() {
+      this.classList.toggle("pressed");
+    });
+
     // 投稿
     containerEl.append(postEl);
   }
@@ -68,14 +76,27 @@ window.addEventListener("load", () => {
   const newpostUsernameEl = document.querySelector(".newsfeed__friend");
   newpostUsernameEl.innerHTML = localStorage.username;
 
-  // フレンドの表示
+  // フレンドの表示(名前)
   const friendlistEl = document.querySelector(".right-sidebar__list");
   
-  bacefook.friendNames.forEach(el => {
-    const friendNameEl = document.createElement("li");
-    friendNameEl.classList.add("right-sidebar__item");
+  bacefook.friendNames.forEach((el, i) => {
+    // フレーム作成
+    const friendflameEl = document.createElement("li");
+    friendflameEl.classList.add("right-sidebar__item");
+    
+    // profile追加
+    const profileimageEl= document.createElement("img");
+    profileimageEl.classList.add("right-sidebar__profile-image");
+    profileimageEl.src = bacefook.newsfeed[i]["image"];
+    profileimageEl.alt = "マフィアの画像です";
+    friendflameEl.append(profileimageEl);
+
+    // friendName追加
+    const friendNameEl = document.createElement("label");
     friendNameEl.innerHTML = el;
-    friendlistEl.append(friendNameEl);
+    friendflameEl.append(friendNameEl);
+    
+    friendlistEl.append(friendflameEl);
   });
 
   // 新しい投稿を作成
@@ -125,20 +146,31 @@ window.addEventListener("load", () => {
     textEl.value = ""; // フォームをリセット
     postEl.append(postmessageEl);
 
+    // サムアップを追加
+    const thumbsupEl = document.createElement("img");
+    thumbsupEl.classList.add("newsfeed__thumbsup");
+    thumbsupEl.src = "images/icon/thumbsup.jpg";
+    thumbsupEl.alt = "サムズアップの画像です";
+    postEl.append(thumbsupEl);
+
+    // サムダウンを追加
+    const thumbsdownEl = document.createElement("img");
+    thumbsdownEl.classList.add("newsfeed__thumbsdown");
+    thumbsdownEl.src = "images/icon/thumbsdown.jpg";
+    thumbsdownEl.alt = "サムズダウンの画像です";
+    postEl.append(thumbsdownEl);
+
+    // サムズアップとサムズダウンの動作
+    thumbsupEl.addEventListener("click", function() {
+      this.classList.toggle("pressed");
+    });
+
+    thumbsdownEl.addEventListener("click", function() {
+      this.classList.toggle("pressed");
+    });
+
     // 投稿
     containerEl.prepend(postEl);
-
-  });
-
-  // サムズアップとサムズダウンの動作
-  const thumbsupEl = document.querySelector(".newsfeed__thumbsup");
-  thumbsupEl.addEventListener("click", function() {
-    this.classList.toggle("pressed");
-  });
-
-  const thumbsdownEl = document.querySelector(".newsfeed__thumbsdown");
-  thumbsdownEl.addEventListener("click", function() {
-    this.classList.toggle("pressed");
   });
 
 });
