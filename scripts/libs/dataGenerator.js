@@ -21,14 +21,14 @@
   ];
   bacefook.friendimages = [
     "images/profile/ABIRU Boss.jpg",
-    "images/profile/ABIRU Boss.jpg",
-    "images/profile/ABIRU Boss.jpg",
-    "images/profile/ABIRU Boss.jpg",
-    "images/profile/ABIRU Boss.jpg",
-    "images/profile/ABIRU Boss.jpg",
-    "images/profile/ABIRU Boss.jpg",
-    "images/profile/ABIRU Boss.jpg",
-    "images/profile/ABIRU Boss.jpg",
+    "images/profile/mafia-1.jpg",
+    "images/profile/mafia-2.jpg",
+    "images/profile/mafia-3.jpg",
+    "images/profile/mafia-4.jpg",
+    "images/profile/mafia-5.jpg",
+    "images/profile/mafia-6.jpg",
+    "images/profile/mafia-7.jpg",
+    "images/profile/mafia-8.jpg",
   ];
   bacefook.friendNames.forEach(name => {
     bacefook.friends[name] = [];

@@ -87,7 +87,7 @@ window.addEventListener("load", () => {
     // profile追加
     const profileimageEl= document.createElement("img");
     profileimageEl.classList.add("right-sidebar__profile-image");
-    profileimageEl.src = bacefook.newsfeed[i]["image"];
+    profileimageEl.src = bacefook.friendimages[i];
     profileimageEl.alt = "マフィアの画像です";
     friendflameEl.append(profileimageEl);
 
