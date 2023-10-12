@@ -1,14 +1,5 @@
 window.addEventListener("load", function() {
 
-      // This is a check to see if there's a username stored
-  let username = localStorage.getItem("username");
-  let password = localStorage.getItem("password");
-  if (!username || !password) {
-    // Prompt for one if a username isn't found
-    username = window.prompt("What is your name?");
-    localStorage.setItem("username", username);
-  }
-
     // ログインボタンを押した後の処理
     const loginBtn = document.querySelector(".log-in__btn");
     loginBtn.addEventListener("click", function() {

@@ -109,6 +109,7 @@ h2 {
     color: #ffffff;
     border-radius: 5px;
     border: none;
+    cursor: pointer;
 }
 
 .sign-up__btn {
@@ -116,4 +117,5 @@ h2 {
     color: #ffffff;
     border-radius: 5px;
     border: none;
+    cursor: pointer;
 }
