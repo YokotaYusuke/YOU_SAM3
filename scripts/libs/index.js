@@ -16,7 +16,7 @@ window.addEventListener("load", function() {
             window.alert("Mafiaへの忠誠は絶対です！");
         } else {
             // postへ遷移
-            window.open("file:///Users/yokota/Desktop/work/You_Sam_Bacefook/post.html", "_blank");
+            window.open("post.html", "_blank");
         }
     });
     
@@ -37,7 +37,7 @@ window.addEventListener("load", function() {
             localStorage.username = codename;
             localStorage.password = password;
             // postへ遷移
-            window.open("file:///Users/yokota/Desktop/work/You_Sam_Bacefook/post.html", "_blank");
+            window.open("post.html", "_blank");
         }
     });
 });
