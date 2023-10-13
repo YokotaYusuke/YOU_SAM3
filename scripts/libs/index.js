@@ -13,7 +13,7 @@ window.addEventListener("load", function() {
         } else if(codename !== localStorage.username || password !== localStorage.password) {
             window.alert("コードネームまたはパスワードが異なります。");
         } else if(!check) {
-            window.alert("Mafiaへの忠誠は絶対です！");
+            window.alert("*****への忠誠は絶対です！");
         } else {
             // postへ遷移
             window.open("post.html", "_blank");
@@ -31,7 +31,7 @@ window.addEventListener("load", function() {
         if(!codename || !password) {
             window.alert("コードネームとパスワードは必須です。");
         } else if(!check) {
-            window.alert("Mafiaへの忠誠は絶対です！");
+            window.alert("*****への忠誠は絶対です！");
         } else {
             // ユーザーネームとパスワードを書き換え
             localStorage.username = codename;

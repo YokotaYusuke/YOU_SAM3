@@ -215,6 +215,10 @@ body {
     left: 28px;
 }
 
+.active-state:nth-child(3) {
+    background-color: #8b8787;
+}
+
 label {
     display: inline-block;
     width: 150px;
