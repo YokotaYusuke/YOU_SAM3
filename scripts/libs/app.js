@@ -95,6 +95,11 @@ window.addEventListener("load", () => {
     const friendNameEl = document.createElement("label");
     friendNameEl.innerHTML = el;
     friendflameEl.append(friendNameEl);
+
+    // アクティブ状態を追加
+    const activeEl = document.createElement("span");
+    activeEl.classList.add("active-state");
+    friendflameEl.append(activeEl);
     
     friendlistEl.append(friendflameEl);
   });

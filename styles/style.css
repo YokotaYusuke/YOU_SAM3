@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background: rgba(133, 133, 128, 0.1);
+    background: rgba(100, 122, 140, 0.1);
 }
 
 #global__container {
@@ -111,12 +111,13 @@ body {
 }
 
 .footer__list {
-    padding-top: 20px;
     list-style: none;
+    margin: 0;
 }
 
 .footer__item {
     float: left;
     color: #8b8787;
     margin: 10px;
+    padding-top: 3px;
 }
