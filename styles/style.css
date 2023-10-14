@@ -64,7 +64,7 @@ body {
 
 .log-in__under-text {
     position: absolute;
-    bottom: -90px;
+    bottom: -70px;
     text-align: left;
     font-size: 12px;
     width: 100%;
@@ -84,6 +84,10 @@ body {
     text-align: left;
     color: #2f6ce5;
     display: block;
+}
+
+.log-in__checkbox {
+    cursor: pointer;
 }
 
 .log-in__btn {
