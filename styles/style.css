@@ -24,7 +24,7 @@ body {
 }
 
 .hero__title {
-    font-size: 43px;
+    font-size: 45px;
     margin: 5px 0;
     color: #2d2d2e;
 }
@@ -68,6 +68,10 @@ body {
     text-align: left;
     font-size: 12px;
     width: 100%;
+}
+
+.log-in__under-text > span {
+    font-weight: bold;
 }
 
 .log-in__item > input {

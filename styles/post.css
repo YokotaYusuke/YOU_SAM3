@@ -164,6 +164,7 @@ body {
     position: absolute;
     bottom: 10px;
     right: 24px;
+    font-size: 14px;
 }
 
 .post__friend {
