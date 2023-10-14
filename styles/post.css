@@ -17,7 +17,7 @@ body {
 }
 
 .hero-container__item {
-    padding: 5px;
+    padding: 8px;
     margin-left: 10px;
 }
 
@@ -29,7 +29,7 @@ body {
 
 .hero-container__text {
     margin: 0px;
-    padding: 5px;
+    padding: 5px 5px 5px 0;
     font-size: 1.8em;
     float: left;
     font-weight: 400;

@@ -24,15 +24,15 @@ body {
 }
 
 .hero__title {
-    font-size: 50px;
+    font-size: 43px;
     margin: 5px 0;
-    color: #2470f2;
+    color: #2d2d2e;
 }
 
 .hero__sub-title {
     font-weight: 500;
     margin: 5px 0;
-    font-size: 25px;
+    font-size: 16px;
 }
 
 .log-in__container {
@@ -51,12 +51,11 @@ body {
     border-radius: 10px;
     box-shadow: 0 1px 5px 2px rgba(0,0,0,.1);
     height: 70%;
-    max-height: 400px;
+    max-height: 350px;
     min-height: 270px;
-    width: 60%;
+    width: 62%;
     background: #ffffff;
     text-align: center;
-    padding-top: 10px;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -67,7 +66,7 @@ body {
     position: absolute;
     bottom: -90px;
     text-align: left;
-    font-size: 15px;
+    font-size: 12px;
     width: 100%;
 }
 
@@ -76,13 +75,12 @@ body {
     box-sizing: border-box;
     padding: 15px;
     margin: 10px;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .log-in__box {
-    margin-left: 10px;
     padding: 15px;
-    font-size: 20px;
+    font-size: 15px;
     text-align: left;
     color: #2f6ce5;
     display: block;
@@ -118,6 +116,7 @@ body {
 .footer__item {
     float: left;
     color: #8b8787;
-    margin: 10px;
-    padding-top: 3px;
+    font-size: 11px;
+    margin: 5px;
+    padding-top: 10px;
 }
