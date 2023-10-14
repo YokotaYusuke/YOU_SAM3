@@ -10,7 +10,7 @@ window.addEventListener("load", function() {
         // テキストボックスのチェック
         if(!codename || !password) {
             window.alert("コードネームとパスワードは必須です。");
-        } else if(!localStorage.codename || !localStorage.password) {
+        } else if(!localStorage.username || !localStorage.password) {
             window.alert("ユーザー情報が見つかりません。新しいアカウントを作成してください。");
         } else if(codename !== localStorage.username || password !== localStorage.password) {
             window.alert("コードネームまたはパスワードが異なります。");
